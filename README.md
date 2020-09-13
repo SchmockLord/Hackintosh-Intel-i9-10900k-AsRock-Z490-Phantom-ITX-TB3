@@ -125,25 +125,19 @@ I needed this to get Audio working:
 - AppleALC.kext
 - FakeID.kext
 - FakePCIID_Intel_HDMI_Audio.kext
-- layout-id=7 
+- layout-id=11
 - device-id=0xA170
 
 The layout-id and the device-id is injected via the device properties.
 
 The audio device has the PCI-Address PciRoot(0x0)/Pci(0x1F,0x3).
 ```
-<key>DeviceProperties</key>
+	<key>PciRoot(0x0)/Pci(0x1F,0x3)</key>
 	<dict>
-		<key>Add</key>
-		<dict>
-			<key>PciRoot(0x0)/Pci(0x1F,0x3)</key>
-			<dict>
-				<key>device-id</key>
-				<data>cKEAAA==</data>
-				<key>layout-id</key>
-				<data>BwAAAA==</data>
-			</dict>
-		</dict>
+		<key>device-id</key>
+		<data>cKEAAA==</data>
+		<key>layout-id</key>
+		<data>CwAAAA==</data>
 	</dict>
 ```
 
