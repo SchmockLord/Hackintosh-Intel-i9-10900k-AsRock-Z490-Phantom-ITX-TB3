@@ -453,22 +453,6 @@
 			</dict>
 			<dict>
 				<key>BundlePath</key>
-				<string>HEVCEnabler.kext</string>
-				<key>Comment</key>
-				<string>Dummy AGPM for Radeon 5700 XT Power Management</string>
-				<key>Enabled</key>
-				<true/>
-				<key>ExecutablePath</key>
-				<string></string>
-				<key>MaxKernel</key>
-				<string></string>
-				<key>MinKernel</key>
-				<string></string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-			</dict>
-			<dict>
-				<key>BundlePath</key>
 				<string>DAGPM.kext</string>
 				<key>Comment</key>
 				<string>Dummy AGPM for Radeon 5700 XT Power Management</string>
