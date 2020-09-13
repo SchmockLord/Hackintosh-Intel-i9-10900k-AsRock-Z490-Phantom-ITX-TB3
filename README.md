@@ -1,7 +1,5 @@
 # Hackintosh-Intel-i9-10900k-AsRock-Z490-Phantom-ITX-TB3
 
-![About this mac](Docs/About_this_Mac.png)
-
 ![ITX Build](Docs/DSC03052.jpg)
 
 Hello folks,
@@ -44,6 +42,7 @@ You can find my EFI folder in this repository.
 
 # more images
 
+![About this mac](Docs/About_this_Mac.png)
 ![ITX Build image 1](Docs/DSC02972.jpg)
 ![ITX Build image 2](Docs/DSC02993.jpg)
 ![ITX Build image 3](Docs/DSC02998.jpg)
@@ -115,7 +114,10 @@ At first, I set the following settings in Hackintool. You can edit them by click
 
 ## USB
 
-I use USBInjectAll.kext and created my own SSDT-EC-USBX.aml and SSDT-UIAC.aml using Hackintool. If you have a different board, you should create your own USB-port configuration and shouldn't use someone elses SSDT-EC-USBX.aml and SSDT-UIAC.aml
+I use USBInjectAll.kext and created my own SSDT-EC-USBX.aml and SSDT-UIAC.aml using Hackintool. If you have a different board, you should create your own USB-port configuration and shouldn't use someone elses SSDT-EC-USBX.aml and SSDT-UIAC.aml.
+
+For more details on the process itself, see the explanation I have made for my previous Gigabyte Z490 Vision D built:  [USB port configuration Gigabyte Z490 Vision D](https://github.com/SchmockLord/Hackintosh-Intel-i9-10900k-Gigabyte-Z490-Vision-D/blob/master/USB-Port-Configuration.md)
+
 
 ## Audio
 
