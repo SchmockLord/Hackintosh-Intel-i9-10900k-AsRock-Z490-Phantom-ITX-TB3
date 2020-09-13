@@ -1,7 +1,5 @@
 # Hackintosh-Intel-i9-10900k-AsRock-Z490-Phantom-ITX-TB3
 
-![About this mac](Docs/About_this_Mac.png)
-
 ![ITX Build](Docs/DSC03052.jpg)
 
 Hello folks,
@@ -44,6 +42,7 @@ You can find my EFI folder in this repository.
 
 # more images
 
+![About this mac](Docs/About_this_Mac.png)
 ![ITX Build image 1](Docs/DSC02972.jpg)
 ![ITX Build image 2](Docs/DSC02993.jpg)
 ![ITX Build image 3](Docs/DSC02998.jpg)
