@@ -57,7 +57,7 @@ You can find my EFI folder in this repository.
 	- Go into the app store and search for Catalina. Download it. It should download to your Macs application folder.
 	- Plugin a plain vanilla USB-Stick with at least 16GB. My installation needed 8.24GB.
 	- The following assumes your USB stick is called "MyVolume".
-	- Check that "MyVolume" is partitioned with GUID. [Technical Note: GUID Format](TechnicalNotes.md/#technical-note-installation--guid-format)
+	- Check that "MyVolume" is partitioned with GUID. [Technical Note: GUID Format](/Docs/TechnicalNotes.md/#technical-note-installation--guid-format)
 	- Open the terminal and enter this command to create the installer (Replace "MyVolume" with your USB-sticks name. In this case Untitled: ```sudo /Applications/Install\ macOS\ Catalina.app/Contents/Resources/createinstallmedia --volume /Volumes/MyVolume```
 	- Now there should be a progress bar in the terminal showing the creation process in %. Wait until it is complete.
 	- At the end your USB-stick should be named "Install macOS Catalina".
@@ -71,9 +71,9 @@ You can find my EFI folder in this repository.
 3. Delete all folders and then copy my entire EFI folder to the root of the EFI-partition
 4. Decide for yourself if you want to use the iMac20,2 (EFI/OC/config_iMac20,2_5700XT.plist) or iMacPro1,1 (EFI/OC/config_iMacPro1,1_5700XT.plist). If you don't need SideCar and want to watch Amazon Prime or Netflix in Safari, you should use the iMacPro1,1 config. For everyone else I would recommend the iMac20,2 as this is closer to the real Mac. Rename the config of your choice to ```config.plist```. If you don't rename one and there is no ```config.plist``` it won't work!
 5. Go to EFI/OC and open the config.plist with a plist Editor (I use "PLIST Editor" from the app store but other alternatives are [XCode](https://developer.apple.com/support/xcode/) or [ProperTree](https://github.com/corpnewt/ProperTree))
-6. Within the config.plist navigate to PlatformInfo/Generic and paste your serials for MLB, SystemSerialNumber and SystemUUID. You can generate them with the tool CloverConfigurator. [Technical Note: Serial Numbers](TechnicalNotes.md/#technical-note-installation--serial-numbers)
+6. Within the config.plist navigate to PlatformInfo/Generic and paste your serials for MLB, SystemSerialNumber and SystemUUID. You can generate them with the tool CloverConfigurator. [Technical Note: Serial Numbers](/Docs/TechnicalNotes.md/#technical-note-installation--serial-numbers)
 7. Make a backup of this altered EFI folder which includes your unique serial number changes.
-8. Adjust your BIOS-Settings. See [My BIOS-settings](/bios-settings.md) for reference.
+8. Adjust your BIOS-Settings. See [My BIOS-settings](/Docs/BIOS-settings/bios-settings.md) for reference.
 9. Reboot from the installation media and install macOS. The installation needs Internet. So either install a supported WiFi-card or plugin Ethernet.
 
 If you get an error within the installation saying something like "this installation is damaged" you can try this workaround: 
