@@ -126,7 +126,7 @@ I needed this to get Audio working:
 - FakeID.kext
 - FakePCIID_Intel_HDMI_Audio.kext
 - layout-id=11
-~- device-id=0xA170~
+- ~device-id=0xA170~
 
 The layout-id and the device-id is injected via the device properties.
 
