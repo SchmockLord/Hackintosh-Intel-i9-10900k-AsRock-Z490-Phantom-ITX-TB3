@@ -126,7 +126,7 @@ I needed this to get Audio working:
 - FakeID.kext
 - FakePCIID_Intel_HDMI_Audio.kext
 - layout-id=11
-- device-id=0xA170
+~- device-id=0xA170~
 
 The layout-id and the device-id is injected via the device properties.
 
@@ -134,8 +134,6 @@ The audio device has the PCI-Address PciRoot(0x0)/Pci(0x1F,0x3).
 ```
 	<key>PciRoot(0x0)/Pci(0x1F,0x3)</key>
 	<dict>
-		<key>device-id</key>
-		<data>cKEAAA==</data>
 		<key>layout-id</key>
 		<data>CwAAAA==</data>
 	</dict>
@@ -152,9 +150,9 @@ I have replaced the onboard Intel AX201 with a BCM94360NG. It sits in a small me
 
 ## Thunderbolt 3 Support
 
-In your BIOS set the following settings. You also need the SSDT-TB3.aml in EFI/OC/ACPI to enable Thunderbolt Hotplug support.
+In your BIOS set the following settings. You also need the SSDT-TB3HP.aml in EFI/OC/ACPI to enable Thunderbolt Hotplug support.
 
-tbd
+![My BIOS-setting 9](/Docs/BIOS-settings/IMG_1117.jpg)
 
 # Credits
 Thanks for your support :) Your help was crucial for my build.
