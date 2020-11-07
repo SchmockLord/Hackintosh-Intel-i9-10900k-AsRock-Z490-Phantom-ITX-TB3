@@ -8,7 +8,7 @@ This is the repository of my newest ITX-build based on the AsRock Z490 Phantom G
 
 You can find my EFI folder in this repository.
 
-**Current Bootloader: OpenCore 0.6.1 (8th Sep 2020)**
+**Current Bootloader: OpenCore 0.6.2 (5th Okt 2020)**
 
 
 # Hardware
