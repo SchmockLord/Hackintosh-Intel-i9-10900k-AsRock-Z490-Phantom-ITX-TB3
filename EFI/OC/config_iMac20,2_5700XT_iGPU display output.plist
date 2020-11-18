@@ -216,18 +216,39 @@
 	<dict>
 		<key>Add</key>
 		<dict>
-			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
+			<key>#PciRoot(0x0)/Pci(0x2,0x0)</key>
 			<dict>
 				<key>AAPL,ig-platform-id</key>
 				<data>AwDImw==</data>
-				<key>device-id</key>
-				<data>kj4AAA==</data>
 				<key>AAPL,slot-name</key>
-				<string>Built In</string>
+				<string>Internal@0,2,0</string>
+				<key>device-id</key>
+				<data>xZsAAA==</data>
 				<key>device_type</key>
-				<string>Display Controller</string>
+				<string>VGA compatible controller</string>
 				<key>model</key>
-				<string>Intel UHD 630</string>
+				<string>Intel UHD Graphics 630 (Desktop)</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
+			<dict>
+				<key>AAPL,ig-platform-id</key>
+				<data>BwCbPg==</data>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,2,0</string>
+				<key>device-id</key>
+				<data>xZsAAA==</data>
+				<key>device_type</key>
+				<string>VGA compatible controller</string>
+				<key>enable-hdmi20</key>
+				<data>AQAAAA==</data>
+				<key>framebuffer-fbmem</key>
+				<data>AACQAA==</data>
+				<key>framebuffer-patch-enable</key>
+				<data>AQAAAA==</data>
+				<key>hda-gfx</key>
+				<string>onboard-1</string>
+				<key>model</key>
+				<string>Intel UHD Graphics 630 (Desktop)</string>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x14,0x0)</key>
 			<dict>
@@ -381,7 +402,7 @@
 				<key>Comment</key>
 				<string>Dummy AGPM for Radeon 5700 XT Power Management</string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>ExecutablePath</key>
 				<string></string>
 				<key>MaxKernel</key>
@@ -465,6 +486,10 @@
 		<array/>
 		<key>Quirks</key>
 		<dict>
+			<key>ExtendBTFeatureFlags</key>
+			<false/>
+			<key>ForceSecureBootScheme</key>
+			<false/>
 			<key>DisableLinkeditJettison</key>
 			<true/>
 			<key>AppleCpuPmCfgLock</key>
@@ -476,7 +501,7 @@
 			<key>AppleXcpmForceBoost</key>
 			<false/>
 			<key>CustomSMBIOSGuid</key>
-			<false/>
+			<true/>
 			<key>DisableIoMapper</key>
 			<true/>
 			<key>DisableRtcChecksum</key>
@@ -597,8 +622,10 @@
 			<data></data>
 			<key>ScanPolicy</key>
 			<integer>0</integer>
+			<key>#ScanPolicy</key>
+			<real>17760515</real>
 			<key>SecureBootModel</key>
-			<string>Disabled</string>
+			<string>j185f</string>
 			<key>Vault</key>
 			<string>Optional</string>
 		</dict>
@@ -688,6 +715,8 @@
 	<dict>
 		<key>Automatic</key>
 		<true/>
+		<key>CustomMemory</key>
+		<false/>
 		<key>Generic</key>
 		<dict>
 			<key>AdviseWindows</key>
@@ -716,7 +745,7 @@
 		<key>UpdateSMBIOS</key>
 		<true/>
 		<key>UpdateSMBIOSMode</key>
-		<string>Create</string>
+		<string>Custom</string>
 	</dict>
 	<key>UEFI</key>
 	<dict>
@@ -748,7 +777,7 @@
 			<key>MinimumVolume</key>
 			<integer>20</integer>
 			<key>PlayChime</key>
-			<true/>
+			<false/>
 			<key>VolumeAmplifier</key>
 			<integer>143</integer>
 		</dict>
@@ -757,7 +786,7 @@
 		<key>Drivers</key>
 		<array>
 			<string>HFSPlus.efi</string>
-			<string>AudioDxe.efi</string>
+			<string>#AudioDxe.efi</string>
 			<string>OpenCanopy.efi</string>
 			<string>OpenRuntime.efi</string>
 		</array>
@@ -784,6 +813,8 @@
 		</dict>
 		<key>Output</key>
 		<dict>
+			<key>ForceResolution</key>
+			<false/>
 			<key>ClearScreenOnModeSwitch</key>
 			<false/>
 			<key>ConsoleMode</key>
