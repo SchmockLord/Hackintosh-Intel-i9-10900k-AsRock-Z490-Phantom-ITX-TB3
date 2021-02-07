@@ -10,7 +10,7 @@
 				<key>Comment</key>
 				<string>Required for Thunderbolt 3 Hot Plug support</string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>Path</key>
 				<string>SSDT-DTGP.aml</string>
 			</dict>
@@ -443,7 +443,7 @@
 			<key>AppleCpuPmCfgLock</key>
 			<false/>
 			<key>AppleXcpmCfgLock</key>
-			<true/>
+			<false/>
 			<key>AppleXcpmExtraMsrs</key>
 			<false/>
 			<key>AppleXcpmForceBoost</key>
@@ -466,6 +466,8 @@
 			<true/>
 			<key>PowerTimeoutKernelPanic</key>
 			<true/>
+			<key>SetApfsTrimTimeout</key>
+			<integer>-1</integer>
 			<key>ThirdPartyDrives</key>
 			<false/>
 			<key>XhciPortLimit</key>
@@ -493,14 +495,18 @@
 			<string>None</string>
 			<key>HideAuxiliary</key>
 			<false/>
+			<key>LauncherOption</key>
+			<string>Disabled</string>
+			<key>LauncherPath</key>
+			<string>Default</string>
 			<key>PickerAttributes</key>
-			<integer>1</integer>
+			<integer>17</integer>
 			<key>PickerAudioAssist</key>
 			<false/>
 			<key>PickerMode</key>
 			<string>External</string>
 			<key>PickerVariant</key>
-			<string>Auto</string>
+			<string>Modern</string>
 			<key>PollAppleHotKeys</key>
 			<false/>
 			<key>ShowPicker</key>
@@ -560,8 +566,6 @@
 			<false/>
 			<key>BlacklistAppleUpdate</key>
 			<true/>
-			<key>BootProtect</key>
-			<string>Bootstrap</string>
 			<key>DmgLoading</key>
 			<string>Signed</string>
 			<key>EnablePassword</key>
@@ -609,7 +613,7 @@
 				<key>SystemAudioVolume</key>
 				<data>Rg==</data>
 				<key>boot-args</key>
-				<string>agdpmod=pikera shikigva=80</string>
+				<string>agdpmod=pikera shikigva=128</string>
 				<key>run-efi-updater</key>
 				<string>No</string>
 				<key>csr-active-config</key>
@@ -679,6 +683,8 @@
 			<false/>
 			<key>SystemMemoryStatus</key>
 			<string>Auto</string>
+			<key>MaxBIOSVersion</key>
+			<false/>
 			<key>MLB</key>
 			<string>C02842108CDJG36CB</string>
 			<key>ROM</key>
@@ -702,6 +708,8 @@
 		<true/>
 		<key>UpdateSMBIOSMode</key>
 		<string>Create</string>
+		<key>UseRawUuidEncoding</key>
+		<false/>
 	</dict>
 	<key>UEFI</key>
 	<dict>
@@ -743,7 +751,7 @@
 		<true/>
 		<key>Drivers</key>
 		<array>
-			<string>HFSPlus.efi</string>
+			<string>OpenHfsPlus.efi</string>
 			<string>#AudioDxe.efi</string>
 			<string>OpenCanopy.efi</string>
 			<string>OpenRuntime.efi</string>
@@ -837,6 +845,8 @@
 		</dict>
 		<key>Quirks</key>
 		<dict>
+			<key>DisableSecurityPolicy</key>
+			<false/>
 			<key>ExitBootServicesDelay</key>
 			<integer>0</integer>
 			<key>IgnoreInvalidFlexRatio</key>
