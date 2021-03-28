@@ -491,13 +491,13 @@
 			<key>LauncherPath</key>
 			<string>Default</string>
 			<key>PickerAttributes</key>
-			<integer>9</integer>
+			<integer>17</integer>
 			<key>PickerAudioAssist</key>
 			<false/>
 			<key>PickerMode</key>
 			<string>External</string>
 			<key>PickerVariant</key>
-			<string>Auto</string>
+			<string>Modern</string>
 			<key>PollAppleHotKeys</key>
 			<false/>
 			<key>ShowPicker</key>
@@ -677,7 +677,7 @@
 			<key>MaxBIOSVersion</key>
 			<false/>
 			<key>MLB</key>
-			<string>C02842108CDJG36CB</string>
+			<string></string>
 			<key>ROM</key>
 			<data></data>
 			<key>ProcessorType</key>
@@ -687,9 +687,9 @@
 			<key>SystemProductName</key>
 			<string>iMacPro1,1</string>
 			<key>SystemSerialNumber</key>
-			<string>C02XK00WHX87</string>
+			<string></string>
 			<key>SystemUUID</key>
-			<string>A5A3BEA1-BF93-44EE-8022-4A44BEB6CCDC</string>
+			<string></string>
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>
