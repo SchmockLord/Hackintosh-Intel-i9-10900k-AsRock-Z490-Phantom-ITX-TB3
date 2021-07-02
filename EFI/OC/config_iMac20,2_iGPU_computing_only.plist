@@ -315,9 +315,9 @@
 				<key>Arch</key>
 				<string>x86_64</string>
 				<key>BundlePath</key>
-				<string>USBPorts_AsRockZ490_Phantom_Gaming_ITX-TB3.kext</string>
+				<string>USBPorts_AsRockZ490_Phantom_Gaming_ITX-TB3_iMac20,2.kext</string>
 				<key>Comment</key>
-				<string>Injects USB-port configuration for Z490 AsRock Phantom Gaming ITX/TB3</string>
+				<string>Injects USB-port configuration for Z490 AsRock Phantom Gaming ITX/TB3 for SMBIOS iMac20,2</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
